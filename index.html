@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Score Counter</h1>
+        <div class="scoreboard">
+            <div class="team home">
+                <h2>HOME</h2>
+                <div class="score" id="homeScore">0</div>
+                <div class="buttons">
+                    <button onclick="updateScore('home', 1)">+1</button>
+                    <button onclick="updateScore('home', 2)">+2</button>
+                    <button onclick="updateScore('home', 3)">+3</button>
+                </div>
+            </div>
+            <div class="team guest">
+                <h2>GUEST</h2>
+                <div class="score" id="guestScore">0</div>
+                <div class="buttons">
+                    <button onclick="updateScore('guest', 1)">+1</button>
+                    <button onclick="updateScore('guest', 2)">+2</button>
+                    <button onclick="updateScore('guest', 3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="newGame" onclick="resetScores()">New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
